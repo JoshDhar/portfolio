@@ -1,49 +1,48 @@
+import {
+  BriefcaseIcon,
+  CodeIcon,
+  DownloadIcon,
+  MailIcon,
+  MailOpenIcon,
+  PhoneIcon,
+  ServerIcon,
+} from "@heroicons/react/solid";
 import Header from "./components/Header";
+import { FaGithub, FaTelegramPlane, FaWhatsapp } from "react-icons/fa";
 
 const App = () => {
   return (
     <>
       <Header />
       {/*---- Hero ----*/}
-      <section>
-        <div className="container px-4 md:px-8 py-12 mx-auto flex flex-col-reverse sm:flex-row items-center mt-8 ">
+      <section className="max-w-3xl mx-auto pt-16" id="home">
+        <div className="container mx-auto px-4 pt-10 pb-16 flex flex-col-reverse sm:flex-row items-center justify-between md:px-6 md:py-20">
           {/* Content */}
-
-          <div className="flex flex-1 flex-col items-center sm:items-start mt-7 lg:py-10 lg:gap-3 font-display">
-            <p className="pb-4 text-4xl text-center sm:text-left sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
-              Hi. I'm Joshua.
-            </p>
-            <p className="text-2xl text-center sm:text-left sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl">
-              A Web Developer.
+          <div className="flex flex-1 flex-col md:self-center items-start mt-7 sm:mt-0 font-display">
+            <p className="text-3xl md:text-4xl">Hi. I'm Joshua.</p>
+            <p className="text-white text-opacity-80 text-lg lg:text-xl mt-3 md:mt-4">
+              Fullstack Web Developer.
             </p>
 
             {/* Button */}
-            <div className="flex justify-center mt-8 md:mt-12 ">
-              <a href="/">
-                <button className="btn btn-primary mr-4 sm:mr-6 lg:mr-8 2xl:mr-10 flex">
-                  Résumé&nbsp;
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5 self-center"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
+            <div className="flex justify-center mt-8 md:mt-10 gap-4">
+              <a href="/cv.docx" download="Joshua CV">
+                <button className="btn btn-primary flex">
+                  Résumé
+                  <DownloadIcon className="h-4 w-4 self-center ml-2 opacity-70" />
                 </button>
               </a>
-              <button className="btn btn-alt">Contact</button>
+              <button className="btn btn-alt flex">
+                Contact
+                <MailOpenIcon className="h-4 w-4 self-center ml-2 opacity-70" />
+              </button>
             </div>
           </div>
 
           {/* Image */}
           <div className="flex justify-center sm:justify-end flex-1">
             <img
-              className="w-5/6 px-4 sm:px-0 sm:pl-6 sm:py-6 max-w-sm"
+              className="w-44 sm:w-52 md:w-72"
               src="./ProfilePic.svg"
               alt="joshua"
             />
@@ -52,153 +51,312 @@ const App = () => {
       </section>
 
       {/* About */}
-      <section className="container mx-auto my-10 px-4 md:px-8">
-        <div className="bg-darkAcc rounded-lg flex flex-col p-8 md:p-12 lg:p-9 xl:p-10 gap-4">
-          <p className="heading mb-2">About Me</p>
-          <p>
-            I am Joshua Dhar, Passionate web designer & developer creating
-            beautiful websites and apps with love.
-          </p>
-          <p>
-            I’ve Spent over 2 years working on backend development, creating
-            websites using asp.net and php (CodeIgniter). I’ve also worked on
-            desktop applications using C#.
-          </p>
-          <p>
-            Learning new Technology and creative problem solving has always been
-            my passion. Currently I am progressing forward on the path to
-            becoming a fullstack developer using javascript.
-          </p>
-          <p>
-            Outside of Work, i am usually Gaming on my PC, or playing my Guitar.
-          </p>
+      <section
+        className="max-w-3xl container mx-auto pb-16 px-4 md:px-6"
+        id="about"
+      >
+        <div className="flex flex-col">
+          <div>
+            <p className="heading">About Me</p>
+            <p className="opacity-50 text-center text-sm mb-12 md:mb-16 mt-2">
+              who i am
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-2">
+            <img
+              src="./selfie.jpg"
+              alt="selfie"
+              className="mx-auto w-52 md:w-72 h-auto rounded-md"
+            />
+            <div className="px-2 flex flex-col gap-2">
+              <p className="text-white text-opacity-70">
+                I am Joshua Dhar, a tireless hunter of knowledge, occasional
+                purveyor of wisdom and also, a web developer.
+              </p>
+              <p className="text-white text-opacity-70">
+                I’ve spent over 4 years creating different web applications.
+              </p>
+              <p className="text-white text-opacity-70">
+                Currently working hard to master the art of being a fullstack
+                developer.
+              </p>
+              <p className="text-white text-opacity-70">
+                Outside of Work, i am usually reading, gaming, or guiding
+                juniors.
+              </p>
+              <div className="mx-auto md:mx-0 mt-6">
+                <a href="/cv.docx" download="Joshua CV">
+                  <button className="btn btn-primary flex">
+                    Résumé
+                    <DownloadIcon className="h-4 w-4 self-center ml-2 opacity-70" />
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* What I Do */}
-      <section className="container mx-auto my-10 px-4 md:px-8">
-        <div className="bg-darkAcc rounded-lg flex-col p-8 md:p-12 lg:p-9 xl:p-10 ">
-          <p className="heading mb-6">What i do</p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-6 lg:gap-6">
-            <div className="bg-dark flex flex-col gap-7 px-6 py-8 rounded-lg">
-              <img
-                className="w-52 h-40 mx-auto"
-                src="./frontend.svg"
-                alt="frontend development"
-              />
-              <p className="font-display text-alt text-3xl">
-                Frontend Development
-              </p>
-              <p>Website design and conversion into code.</p>
+      {/* Skills */}
+      <section
+        className="max-w-3xl container mx-auto pb-16 px-4 md:px-6"
+        id="skills"
+      >
+        <div className="flex-col">
+          <div>
+            <p className="heading mt-10">Skills</p>
+            <p className="opacity-50 text-sm text-center mb-12 md:mb-16 mt-2">
+              stacks i know
+            </p>
+          </div>
+          <div className="grid grid-cols-1 mt-2 md:grid-cols-2 gap-6 md:gap-10">
+            <div className="bg-dark flex flex-col px-4 pb-6">
+              <div className="flex mb-6">
+                <CodeIcon className="text-alt h-8 w-8 mr-3 self-center" />
+                <p className="font-display text-alt text-3xl">Frontend</p>
+              </div>
+              <div className="flex flex-wrap gap-3">
+                <span className="rounded-full text-white bg-darkAcc px-4 py-2 text-xs font-bold ">
+                  Html
+                </span>
+                <span className="rounded-full text-white bg-darkAcc px-4 py-2 text-xs font-bold ">
+                  Css
+                </span>
+                <span className="rounded-full text-white bg-darkAcc px-4 py-2 text-xs font-bold ">
+                  Javascript
+                </span>
+                <span className="rounded-full text-white bg-darkAcc px-4 py-2 text-xs font-bold ">
+                  React
+                </span>
+                <span className="rounded-full text-white bg-darkAcc px-4 py-2 text-xs font-bold ">
+                  Tailwind Css
+                </span>
+                <span className="rounded-full text-white bg-darkAcc px-4 py-2 text-xs font-bold ">
+                  BootStrap
+                </span>
+              </div>
             </div>
-            <div className="bg-dark flex flex-col gap-7 px-6 py-8 rounded-lg">
-              <img
-                className="w-52 h-40 mx-auto"
-                src="./backend.svg"
-                alt="frontend development"
-              />
-              <p className="font-display text-alt text-3xl">
-                Backend Development
-              </p>
-              <p>
-                Server and database design and coding according to client
-                requirements.
-              </p>
+            <div className="bg-dark flex flex-col px-4 pb-6">
+              <div className="flex mb-6">
+                <ServerIcon className="text-alt h-8 w-8 mr-3 self-center" />
+                <p className="font-display text-alt text-3xl">Backend</p>
+              </div>
+              <div className="flex flex-wrap gap-3">
+                <span className="rounded-full text-white bg-darkAcc px-4 py-2 text-xs font-bold">
+                  Node
+                </span>
+                <span className="rounded-full text-white bg-darkAcc px-4 py-2 text-xs font-bold">
+                  C#
+                </span>
+                <span className="rounded-full text-white bg-darkAcc px-4 py-2 text-xs font-bold">
+                  Php
+                </span>
+                <span className="rounded-full text-white bg-darkAcc px-4 py-2 text-xs font-bold">
+                  .Net
+                </span>
+              </div>
             </div>
-            <div className="bg-dark flex flex-col gap-7 px-6 py-8 rounded-lg">
-              <img
-                className="w-52 h-40 mx-auto"
-                src="./mobile.svg"
-                alt="frontend development"
-              />
-              <p className="font-display text-alt text-3xl">
-                Mobile Apps development
-              </p>
-              <p>
-                Both Frontend and Backend design and developement, linking with
-                database and later hosting with preffered hosting website.
-              </p>
+            <div className="bg-dark flex flex-col px-4 pb-6">
+              <div className="flex mb-6">
+                <BriefcaseIcon className="text-alt h-8 w-8 mr-3 self-center" />
+                <p className="font-display text-alt text-3xl">Tools</p>
+              </div>
+              <div className="flex flex-wrap gap-3">
+                <span className="rounded-full text-white bg-darkAcc px-4 py-2 text-xs font-bold">
+                  Figma
+                </span>
+                <span className="rounded-full text-white bg-darkAcc px-4 py-2 text-xs font-bold">
+                  Photoshop
+                </span>
+                <span className="rounded-full text-white bg-darkAcc px-4 py-2 text-xs font-bold">
+                  VS Code
+                </span>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* My Work */}
-      <section className="container mx-auto my-10 px-4 md:px-8">
-        <div className="bg-darkAcc rounded-lg flex flex-col p-4 md:p-8 lg:p-9 xl:p-10 gap-4">
-          <p className="heading mb-4">My work</p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-6 lg:gap-6">
-            <div className="bg-dark flex flex-col gap-7 px-6 py-8 rounded-lg">
-              <img
-                className="w-52 mx-auto"
-                src="./fullstack.svg"
-                alt="frontend development"
-              />
-              <p className="heading">Fullstack development with hosting</p>
-              <p>
-                Both Frontend and Backend design and developement, linking with
-                database and later hosting with preffered hosting website.
-              </p>
-            </div>
+      <section
+        className="max-w-3xl container mx-auto pb-16 px-4 md:px-6"
+        id="work"
+      >
+        <div>
+          <p className="heading">Work</p>
+          <p className="opacity-50 text-center text-sm mb-12 md:mb-16 mt-2">
+            what i have done
+          </p>
+        </div>
+        {/* card */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-4">
+          <div className="bg-darkAcc rounded-lg flex flex-col justify-around items-center overflow-hidden">
+            <img
+              className="h-52 w-full object-cover object-top"
+              src="./yelp.jpg"
+              alt="work"
+            />
 
-            <div className="bg-dark flex flex-col gap-7 px-6 py-8 rounded-lg">
-              <img
-                className="w-52 mx-auto"
-                src="./fullstack.svg"
-                alt="frontend development"
-              />
-              <p className="heading">Fullstack development with hosting</p>
-              <p>
-                Both Frontend and Backend design and developement, linking with
-                database and later hosting with preffered hosting website.
-              </p>
-            </div>
+            <div className="flex-1 w-full flex flex-col items-baseline justify-around h-1/2 px-6 pb-4 relative">
+              <div className="flex flex-col justify-start items-baseline">
+                <h1 className="text-lg font-normal pt-4 text-white font-sans">
+                  Restaurant Finder App
+                </h1>
+                <p className="text-xs mt-2 text-white text-opacity-80 ">
+                  A Restaurant Finder App using Yelp API
+                </p>
+                <div className="flex flex-wrap mt-4 gap-2">
+                  <span className="rounded-full text-white bg-dark px-4 py-2 text-xs text-opacity-80">
+                    React Native
+                  </span>
+                  <span className="rounded-full text-white bg-dark px-4 py-2 text-xs text-opacity-80">
+                    Yelp
+                  </span>
+                  <span className="rounded-full text-white bg-dark px-4 py-2 text-xs text-opacity-80">
+                    Api
+                  </span>
+                </div>
+              </div>
 
-            <div className="bg-dark flex flex-col gap-7 px-6 py-8 rounded-lg">
-              <img
-                className="w-52 mx-auto"
-                src="./fullstack.svg"
-                alt="frontend development"
-              />
-              <p className="heading">Fullstack development with hosting</p>
-              <p>
-                Both Frontend and Backend design and developement, linking with
-                database and later hosting with preffered hosting website.
-              </p>
+              <a
+                href="https://github.com/JoshDhar/food"
+                className="absolute top-6 right-6"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaGithub className="text-white opacity-60 hover:opacity-80 h-6 w-6" />
+              </a>
+            </div>
+          </div>
+          <div className="bg-darkAcc rounded-lg flex flex-col justify-around items-center overflow-hidden">
+            <img
+              className="h-1/2 w-full object-cover"
+              src="https://images.unsplash.com/photo-1484101403633-562f891dc89a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1053&q=80"
+              alt="work"
+            />
+
+            <div className="flex-1 w-full flex flex-col items-baseline justify-around h-1/2 px-6 pb-4 relative">
+              <div className="flex flex-col justify-start items-baseline">
+                <h1 className="text-lg font-normal pt-4 text-white font-sans">
+                  Ecommerce Website
+                </h1>
+                <p className="text-xs mt-2 text-white text-opacity-80 ">
+                  An Ecommerce Shop Website with cart, user authentication and
+                  admin panel
+                </p>
+                <div className="flex flex-wrap mt-4 gap-2">
+                  <span className="rounded-full text-white bg-dark px-4 py-2 text-xs text-opacity-80">
+                    React Native
+                  </span>
+                  <span className="rounded-full text-white bg-dark px-4 py-2 text-xs text-opacity-80">
+                    Yelp
+                  </span>
+                  <span className="rounded-full text-white bg-dark px-4 py-2 text-xs text-opacity-80">
+                    Api
+                  </span>
+                </div>
+              </div>
+
+              <a
+                href="https://github.com/JoshDhar/food"
+                className="absolute top-6 right-6"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaGithub className="text-white opacity-60 hover:opacity-80 h-6 w-6" />
+              </a>
+            </div>
+          </div>
+          <div className="bg-darkAcc rounded-lg flex flex-col justify-around items-center overflow-hidden">
+            <img
+              className="h-1/2 w-full object-cover"
+              src="https://images.unsplash.com/photo-1484101403633-562f891dc89a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1053&q=80"
+              alt="work"
+            />
+
+            <div className="flex-1 w-full flex flex-col items-baseline justify-around h-1/2 px-6 pb-4 relative">
+              <div className="flex flex-col justify-start items-baseline">
+                <h1 className="text-lg font-normal pt-4 text-white font-sans">
+                  Social media app
+                </h1>
+                <p className="text-xs mt-2 text-white text-opacity-80 ">
+                  Social media app with user authentication.
+                </p>
+                <div className="flex flex-wrap mt-4 gap-2">
+                  <span className="rounded-full text-white bg-dark px-4 py-2 text-xs text-opacity-80">
+                    React Native
+                  </span>
+                  <span className="rounded-full text-white bg-dark px-4 py-2 text-xs text-opacity-80">
+                    Yelp
+                  </span>
+                  <span className="rounded-full text-white bg-dark px-4 py-2 text-xs text-opacity-80">
+                    Api
+                  </span>
+                </div>
+              </div>
+
+              <a
+                href="https://github.com/JoshDhar/food"
+                className="absolute top-6 right-6"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaGithub className="text-white opacity-60 hover:opacity-80 h-6 w-6 " />
+              </a>
             </div>
           </div>
         </div>
       </section>
 
       {/* Say hi */}
-      <section className="container mx-auto my-10 px-4 md:px-8">
-        <div className="bg-darkAcc rounded-lg flex flex-col p-4 md:p-8 lg:p-9 xl:p-10 gap-4">
-          <p className="heading">Say hi</p>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
-            <p className="my-auto">Whatsapp:</p>
-            <a href="https://wa.me/9038294698" className="hover:text-alt ">
-              <img
-                src="./whatsapp.svg"
-                alt="whatsapp"
-                className=" h-10 w-10 md:h-16 md:w-16"
-              />
-            </a>
-            <p className="my-auto">Telegram:</p>
-            <a href="https://t.me/joshdhar" className="">
-              <img
-                src="./telegram.svg"
-                alt="telegram"
-                className=" h-10 w-10 md:h-16 md:w-16"
-              />
-            </a>
-            <p className="my-auto">Github:</p>
-            <a href="https://github.com/JoshDhar">
-              <img
-                src="./github.svg"
-                alt="github"
-                className=" h-10 w-10 md:h-16 md:w-16"
-              />
-            </a>
+      <section
+        className="max-w-3xl container mx-auto pb-16 px-4 md:px-6"
+        id="contact"
+      >
+        <div className="flex-col">
+          <div>
+            <p className="heading mt-10">Contact me</p>
+            <p className="opacity-50 text-sm text-center mb-12 md:mb-16 mt-2">
+              say hi !
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 px-4 ">
+            <div className="flex">
+              <PhoneIcon className="h-5 w-5 mr-3 text-blue-500 opacity-70" />
+              <a
+                href="tel:+919038294698"
+                className="text-white text-opacity-90 hover:text-alt"
+              >
+                9038294698
+              </a>
+            </div>
+            <div className="flex">
+              <MailIcon className="h-5 w-5 mr-3 text-white opacity-70" />
+              <a
+                href="mailto:joshdharofficial@gmail.com"
+                className="text-white text-opacity-90 hover:text-alt"
+              >
+                joshdharofficial@gmail.com
+              </a>
+            </div>
+            <div className="flex">
+              <FaWhatsapp className="h-5 w-5 mr-3 text-green-500 opacity-70" />
+              <a
+                href="https://wa.me/+919038294698"
+                className="text-white text-opacity-90 hover:text-alt"
+              >
+                wa.me/+919038294698
+              </a>
+            </div>
+            <div className="flex">
+              <FaTelegramPlane className="h-5 w-5 mr-3 text-blue-500 opacity-70" />
+              <a
+                href="https://www.t.me/joshdhar"
+                className="text-white text-opacity-90 hover:text-alt"
+              >
+                t.me/joshdhar
+              </a>
+            </div>
           </div>
         </div>
       </section>
