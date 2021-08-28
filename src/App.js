@@ -19,7 +19,7 @@ const App = () => {
         <div className="container mx-auto px-4 pt-10 pb-16 flex flex-col-reverse sm:flex-row items-center justify-between md:px-6 md:py-20">
           {/* Content */}
           <div className="flex flex-1 flex-col md:self-center items-start mt-7 sm:mt-0 font-display">
-            <p className="text-3xl md:text-4xl">Hi. I'm Joshua.</p>
+            <p className="text-3xl md:text-4xl">Hi. I am Joshua.</p>
             <p className="text-white text-opacity-80 text-lg lg:text-xl mt-3 md:mt-4">
               Fullstack Web Developer.
             </p>
@@ -57,9 +57,9 @@ const App = () => {
       >
         <div className="flex flex-col">
           <div>
-            <p className="heading">About Me</p>
+            <p className="heading">About me</p>
             <p className="opacity-50 text-center text-sm mb-12 md:mb-16 mt-2">
-              who i am
+              who I am
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-2">
@@ -81,8 +81,8 @@ const App = () => {
                 developer.
               </p>
               <p className="text-white text-opacity-70">
-                Outside of Work, i am usually reading, gaming, or guiding
-                juniors.
+                Outside of work, I am usually reading, gaming, or providing
+                guidance to juniors.
               </p>
               <div className="mx-auto md:mx-0 mt-6">
                 <a href="/cv.docx" download="Joshua CV">
@@ -106,7 +106,7 @@ const App = () => {
           <div>
             <p className="heading mt-10">Skills</p>
             <p className="opacity-50 text-sm text-center mb-12 md:mb-16 mt-2">
-              stacks i know
+              stacks I know
             </p>
           </div>
           <div className="grid grid-cols-1 mt-2 md:grid-cols-2 gap-6 md:gap-10">
@@ -185,7 +185,7 @@ const App = () => {
         <div>
           <p className="heading">Work</p>
           <p className="opacity-50 text-center text-sm mb-12 md:mb-16 mt-2">
-            what i have done
+            what I have done
           </p>
         </div>
         {/* card */}
@@ -230,78 +230,40 @@ const App = () => {
           </div>
           <div className="bg-darkAcc rounded-lg flex flex-col justify-around items-center overflow-hidden">
             <img
-              className="h-1/2 w-full object-cover"
-              src="https://images.unsplash.com/photo-1484101403633-562f891dc89a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1053&q=80"
+              className="h-52 w-full object-cover object-top"
+              src="./npmSearch.png"
               alt="work"
             />
 
             <div className="flex-1 w-full flex flex-col items-baseline justify-around h-1/2 px-6 pb-4 relative">
               <div className="flex flex-col justify-start items-baseline">
                 <h1 className="text-lg font-normal pt-4 text-white font-sans">
-                  Ecommerce Website
+                  Npm search web application
                 </h1>
                 <p className="text-xs mt-2 text-white text-opacity-80 ">
-                  An Ecommerce Shop Website with cart, user authentication and
-                  admin panel
+                  Simple application to search for names of npm packages using
+                  Redux and npm API
                 </p>
                 <div className="flex flex-wrap mt-4 gap-2">
                   <span className="rounded-full text-white bg-dark px-4 py-2 text-xs text-opacity-80">
-                    React Native
+                    React
                   </span>
                   <span className="rounded-full text-white bg-dark px-4 py-2 text-xs text-opacity-80">
-                    Yelp
+                    TypeScript
                   </span>
                   <span className="rounded-full text-white bg-dark px-4 py-2 text-xs text-opacity-80">
-                    Api
+                    Redux
                   </span>
                 </div>
               </div>
 
               <a
-                href="https://github.com/JoshDhar/food"
+                href="https://github.com/JoshDhar/npmSearch"
                 className="absolute top-6 right-6"
                 target="_blank"
                 rel="noreferrer"
               >
                 <FaGithub className="text-white opacity-60 hover:opacity-80 h-6 w-6" />
-              </a>
-            </div>
-          </div>
-          <div className="bg-darkAcc rounded-lg flex flex-col justify-around items-center overflow-hidden">
-            <img
-              className="h-1/2 w-full object-cover"
-              src="https://images.unsplash.com/photo-1484101403633-562f891dc89a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1053&q=80"
-              alt="work"
-            />
-
-            <div className="flex-1 w-full flex flex-col items-baseline justify-around h-1/2 px-6 pb-4 relative">
-              <div className="flex flex-col justify-start items-baseline">
-                <h1 className="text-lg font-normal pt-4 text-white font-sans">
-                  Social media app
-                </h1>
-                <p className="text-xs mt-2 text-white text-opacity-80 ">
-                  Social media app with user authentication.
-                </p>
-                <div className="flex flex-wrap mt-4 gap-2">
-                  <span className="rounded-full text-white bg-dark px-4 py-2 text-xs text-opacity-80">
-                    React Native
-                  </span>
-                  <span className="rounded-full text-white bg-dark px-4 py-2 text-xs text-opacity-80">
-                    Yelp
-                  </span>
-                  <span className="rounded-full text-white bg-dark px-4 py-2 text-xs text-opacity-80">
-                    Api
-                  </span>
-                </div>
-              </div>
-
-              <a
-                href="https://github.com/JoshDhar/food"
-                className="absolute top-6 right-6"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <FaGithub className="text-white opacity-60 hover:opacity-80 h-6 w-6 " />
               </a>
             </div>
           </div>
