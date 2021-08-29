@@ -26,7 +26,7 @@ const App = () => {
 
             {/* Button */}
             <div className="flex justify-center mt-8 md:mt-10 gap-4">
-              <a href="/cv.docx" download="Joshua CV">
+              <a href="/cv.pdf" download="Joshua CV">
                 <button className="btn btn-primary flex">
                   Résumé
                   <DownloadIcon className="h-4 w-4 self-center ml-2 opacity-70" />
@@ -85,7 +85,7 @@ const App = () => {
                 guidance to juniors.
               </p>
               <div className="mx-auto md:mx-0 mt-6">
-                <a href="/cv.docx" download="Joshua CV">
+                <a href="/cv.pdf" download="Joshua CV">
                   <button className="btn btn-primary flex">
                     Résumé
                     <DownloadIcon className="h-4 w-4 self-center ml-2 opacity-70" />
