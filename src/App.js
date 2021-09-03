@@ -77,8 +77,8 @@ const App = () => {
                 I’ve spent over 4 years creating different web applications.
               </p>
               <p className="text-white text-opacity-70">
-                Currently working hard to master the art of being a fullstack
-                developer.
+                Currently working in Cogito Software Pvt Ltd as a React Native
+                Developer.
               </p>
               <p className="text-white text-opacity-70">
                 Outside of work, I am usually reading, gaming, or providing
