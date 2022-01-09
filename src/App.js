@@ -131,6 +131,9 @@ const App = () => {
                   React
                 </span>
                 <span className="rounded-full text-white bg-darkAcc px-4 py-2 text-xs font-bold ">
+                  React Native
+                </span>
+                <span className="rounded-full text-white bg-darkAcc px-4 py-2 text-xs font-bold ">
                   Tailwind Css
                 </span>
                 <span className="rounded-full text-white bg-darkAcc px-4 py-2 text-xs font-bold ">
