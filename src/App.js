@@ -32,10 +32,12 @@ const App = () => {
                   <DownloadIcon className="h-4 w-4 self-center ml-2 opacity-70" />
                 </button>
               </a>
-              <button className="btn btn-alt flex">
-                Contact
-                <MailOpenIcon className="h-4 w-4 self-center ml-2 opacity-70" />
-              </button>
+              <a href="#contact" download="Joshua CV">
+                <button className="btn btn-alt flex">
+                  Contact
+                  <MailOpenIcon className="h-4 w-4 self-center ml-2 opacity-70" />
+                </button>
+              </a>
             </div>
           </div>
 
@@ -64,7 +66,7 @@ const App = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-2">
             <img
-              src="./selfie.jpg"
+              src="./selfie.png"
               alt="selfie"
               className="mx-auto w-52 md:w-72 h-auto rounded-md"
             />
