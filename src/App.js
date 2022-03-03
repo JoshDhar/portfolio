@@ -32,7 +32,7 @@ const App = () => {
                   <DownloadIcon className="h-4 w-4 self-center ml-2 opacity-70" />
                 </button>
               </a>
-              <a href="#contact" download="Joshua CV">
+              <a href="#contact">
                 <button className="btn btn-alt flex">
                   Contact
                   <MailOpenIcon className="h-4 w-4 self-center ml-2 opacity-70" />
