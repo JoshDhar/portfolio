@@ -72,15 +72,16 @@ const App = () => {
             />
             <div className="px-2 flex flex-col gap-2">
               <p className="text-white text-opacity-70">
-                I am Joshua Dhar, a tireless hunter of knowledge, occasional
-                purveyor of wisdom and also, a web developer.
+                I am Joshua Dhar, a thinker, a dreamer, a problem solver and
+                also, a web developer.
               </p>
               <p className="text-white text-opacity-70">
-                I’ve spent over 4 years creating different web applications.
+                I’ve spent over 5 years creating different web applications
+                using different stacks.
               </p>
               <p className="text-white text-opacity-70">
-                Currently working in Cogito Software Pvt Ltd as a React Native
-                Developer.
+                I am currently working in Cogito Software Pvt Ltd as a React
+                Native Developer.
               </p>
               <p className="text-white text-opacity-70">
                 Outside of work, I am usually reading, gaming, or providing
