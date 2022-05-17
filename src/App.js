@@ -198,7 +198,7 @@ const App = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-4">
           <div className="bg-darkAcc rounded-lg flex flex-col justify-around items-center overflow-hidden">
             <img
-              className="h-52 w-full object-cover object-top"
+              className="h-64 w-full object-contain object-top"
               src="./yelp.jpg"
               alt="work"
             />
@@ -234,9 +234,45 @@ const App = () => {
               </a>
             </div>
           </div>
+
           <div className="bg-darkAcc rounded-lg flex flex-col justify-around items-center overflow-hidden">
             <img
-              className="h-52 w-full object-cover object-top"
+              className="h-64 w-full object-cover object-top"
+              src="./Portfolio.png"
+              alt="work"
+            />
+
+            <div className="flex-1 w-full flex flex-col items-baseline justify-around h-1/2 px-6 pb-4 relative">
+              <div className="flex flex-col justify-start items-baseline">
+                <h1 className="text-lg font-normal pt-4 text-white font-sans">
+                  Portfolio
+                </h1>
+                <p className="text-xs mt-2 text-white text-opacity-80 ">
+                  My Portfolio Website. Created using React and Tailwindcss.
+                </p>
+                <div className="flex flex-wrap mt-4 gap-2">
+                  <span className="rounded-full text-white bg-dark px-4 py-2 text-xs text-opacity-80">
+                    React
+                  </span>
+                  <span className="rounded-full text-white bg-dark px-4 py-2 text-xs text-opacity-80">
+                    Tailwindcss
+                  </span>
+                </div>
+              </div>
+
+              <a
+                href="https://github.com/JoshDhar/portfolio"
+                className="absolute top-6 right-6"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaGithub className="text-white opacity-60 hover:opacity-80 h-6 w-6" />
+              </a>
+            </div>
+          </div>
+          <div className="bg-darkAcc rounded-lg flex flex-col justify-around items-center overflow-hidden">
+            <img
+              className="h-64 w-full object-cover object-top"
               src="./npmSearch.png"
               alt="work"
             />
@@ -271,6 +307,130 @@ const App = () => {
               >
                 <FaGithub className="text-white opacity-60 hover:opacity-80 h-6 w-6" />
               </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Live Projects */}
+      <section
+        className="max-w-3xl container mx-auto pb-16 px-4 md:px-6"
+        id="work"
+      >
+        <div>
+          <p className="heading">Production Work</p>
+          <p className="opacity-50 text-center text-sm mb-12 md:mb-16 mt-2">
+            Projects done for production
+          </p>
+        </div>
+        {/* card */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-4">
+          <div className="bg-darkAcc rounded-lg flex flex-col justify-around items-center overflow-hidden">
+            <img
+              className="h-64 w-full object-contain object-top"
+              src="./GofbaScreenshot.jpg"
+              alt="work"
+            />
+
+            <div className="flex-1 w-full flex flex-col items-baseline justify-around h-1/2 px-6 pb-4 relative">
+              <div className="flex flex-col justify-start items-baseline">
+                <h1 className="text-lg font-normal pt-4 text-white font-sans">
+                  Gofba Chat
+                </h1>
+                <p className="text-xs mt-2 text-white text-opacity-80 ">
+                  A Chat App with additional features like nearby restaurant
+                  search on map using Mapbox API.
+                </p>
+                <div className="flex flex-wrap mt-4 gap-2">
+                  <span className="rounded-full text-white bg-dark px-4 py-2 text-xs text-opacity-80">
+                    React Native
+                  </span>
+                  <span className="rounded-full text-white bg-dark px-4 py-2 text-xs text-opacity-80">
+                    Mapbox
+                  </span>
+                  <span className="rounded-full text-white bg-dark px-4 py-2 text-xs text-opacity-80">
+                    Chat
+                  </span>
+                  <span className="rounded-full text-white bg-dark px-4 py-2 text-xs text-opacity-80">
+                    API
+                  </span>
+                </div>
+              </div>
+              <a href="https://play.google.com/store/apps/details?id=com.gofba.v2.chat&hl=en_IN&gl=US">
+                <img
+                  className="opacity-80 hover:opacity-100 w-32 rounded-lg"
+                  alt="Get it on Google Play"
+                  src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                />
+              </a>
+            </div>
+          </div>
+          <div className="bg-darkAcc rounded-lg flex flex-col justify-around items-center overflow-hidden">
+            <img
+              className="h-64 w-full object-contain object-top"
+              src="./Quickbase.png"
+              alt="work"
+            />
+
+            <div className="flex-1 w-full flex flex-col items-baseline justify-around h-1/2 px-6 pb-4 relative">
+              <div className="flex flex-col justify-start items-baseline">
+                <h1 className="text-lg font-normal pt-4 text-white font-sans">
+                  Quickbase
+                </h1>
+                <p className="text-xs mt-2 text-white text-opacity-80 ">
+                  Quickbase App for the website. The App relies heavily on
+                  webview with complex customization. Worked on conversion of
+                  Web View components to Native components.
+                </p>
+                <div className="flex flex-wrap mt-4 gap-2">
+                  <span className="rounded-full text-white bg-dark px-4 py-2 text-xs text-opacity-80">
+                    React Native
+                  </span>
+                  <span className="rounded-full text-white bg-dark px-4 py-2 text-xs text-opacity-80">
+                    Web View
+                  </span>
+                  <span className="rounded-full text-white bg-dark px-4 py-2 text-xs text-opacity-80">
+                    Customization
+                  </span>
+                </div>
+              </div>
+
+              <a href="https://play.google.com/store/apps/details?id=com.qbmobile">
+                <img
+                  className="opacity-80 hover:opacity-100 w-32 rounded-lg"
+                  alt="Get it on Google Play"
+                  src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                />
+              </a>
+            </div>
+          </div>
+          <div className="bg-darkAcc rounded-lg flex flex-col justify-around items-center overflow-hidden">
+            <img
+              className="h-64 w-full object-contain object-top"
+              src="./Synergy.png"
+              alt="work"
+            />
+
+            <div className="flex-1 w-full flex flex-col items-baseline justify-around h-1/2 px-6 pb-4 relative">
+              <div className="flex flex-col justify-start items-baseline">
+                <h1 className="text-lg font-normal pt-4 text-white font-sans">
+                  Synergy
+                </h1>
+                <p className="text-xs mt-2 text-white text-opacity-80 ">
+                  A facility management application. Uses QR scan.
+                </p>
+                <div className="flex flex-wrap mt-4 gap-2">
+                  <span className="rounded-full text-white bg-dark px-4 py-2 text-xs text-opacity-80">
+                    React Native
+                  </span>
+                  <span className="rounded-full text-white bg-dark px-4 py-2 text-xs text-opacity-80">
+                    QR Scan
+                  </span>
+                  <span className="rounded-full text-white bg-dark px-4 py-2 text-xs text-opacity-80">
+                    Nativebase
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
