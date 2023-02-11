@@ -80,8 +80,8 @@ const App = () => {
                 using different stacks.
               </p>
               <p className="text-white text-opacity-70">
-                I am currently working in Cogito Software Pvt Ltd as a React
-                Native Developer.
+                I am currently working in Kogito IT Services Pvt Ltd as a Senior
+                React Native Developer.
               </p>
               <p className="text-white text-opacity-70">
                 Outside of work, I am usually reading, gaming, or providing
