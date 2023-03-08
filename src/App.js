@@ -8,7 +8,7 @@ import {
   ServerIcon,
 } from "@heroicons/react/solid";
 import Header from "./components/Header";
-import { FaGithub, FaTelegramPlane, FaWhatsapp } from "react-icons/fa";
+import { FaTelegramPlane, FaWhatsapp } from "react-icons/fa";
 
 const App = () => {
   return (
