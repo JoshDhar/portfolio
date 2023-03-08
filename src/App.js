@@ -184,7 +184,7 @@ const App = () => {
       </section>
 
       {/* My Work */}
-      <section
+      {/* <section
         className="max-w-3xl container mx-auto pb-16 px-4 md:px-6"
         id="work"
       >
@@ -194,7 +194,6 @@ const App = () => {
             what I have done
           </p>
         </div>
-        {/* card */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-4">
           <div className="bg-darkAcc rounded-lg flex flex-col justify-around items-center overflow-hidden">
             <img
@@ -310,7 +309,7 @@ const App = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Live Projects */}
       <section
@@ -356,7 +355,11 @@ const App = () => {
                   </span>
                 </div>
               </div>
-              <a href="https://play.google.com/store/apps/details?id=com.gofba.v2.chat&hl=en_IN&gl=US">
+              <a
+                href="https://play.google.com/store/apps/details?id=com.gofba.v2.chat&hl=en_IN&gl=US"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img
                   className="opacity-80 hover:opacity-100 w-32 rounded-lg"
                   alt="Get it on Google Play"
@@ -395,7 +398,11 @@ const App = () => {
                 </div>
               </div>
 
-              <a href="https://play.google.com/store/apps/details?id=com.qbmobile">
+              <a
+                href="https://play.google.com/store/apps/details?id=com.qbmobile"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img
                   className="opacity-80 hover:opacity-100 w-32 rounded-lg"
                   alt="Get it on Google Play"
@@ -404,6 +411,85 @@ const App = () => {
               </a>
             </div>
           </div>
+
+          <div className="bg-darkAcc rounded-lg flex flex-col justify-around items-center overflow-hidden">
+            <img
+              className="h-64 w-full object-contain object-top"
+              src="./Idfc.png"
+              alt="work"
+            />
+
+            <div className="flex-1 w-full flex flex-col items-baseline justify-around h-1/2 px-6 pb-4 relative">
+              <div className="flex flex-col justify-start items-baseline">
+                <h1 className="text-lg font-normal pt-4 text-white font-sans">
+                  IDFC Bank App
+                </h1>
+                <p className="text-xs mt-2 text-white text-opacity-80 ">
+                  The Mobile Application for IDFC Bank customers.
+                </p>
+                <div className="flex flex-wrap mt-4 gap-2">
+                  <span className="rounded-full text-white bg-dark px-4 py-2 text-xs text-opacity-80">
+                    React Native
+                  </span>
+                  <span className="rounded-full text-white bg-dark px-4 py-2 text-xs text-opacity-80">
+                    Styled components
+                  </span>
+                </div>
+              </div>
+
+              <a
+                href="https://play.google.com/store/apps/details?id=com.idfcfirstbank.optimus"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  className="opacity-80 hover:opacity-100 w-32 rounded-lg"
+                  alt="Get it on Google Play"
+                  src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div className="bg-darkAcc rounded-lg flex flex-col justify-around items-center overflow-hidden">
+            <img
+              className="h-64 w-full object-contain object-top"
+              src="./Rvscrm.png"
+              alt="work"
+            />
+
+            <div className="flex-1 w-full flex flex-col items-baseline justify-around h-1/2 px-6 pb-4 relative">
+              <div className="flex flex-col justify-start items-baseline">
+                <h1 className="text-lg font-normal pt-4 text-white font-sans">
+                  G B Builders Requisition App
+                </h1>
+                <p className="text-xs mt-2 text-white text-opacity-80 ">
+                  A Supply Chain Mobile Application for a construction company.
+                </p>
+                <div className="flex flex-wrap mt-4 gap-2">
+                  <span className="rounded-full text-white bg-dark px-4 py-2 text-xs text-opacity-80">
+                    React Native
+                  </span>
+                  <span className="rounded-full text-white bg-dark px-4 py-2 text-xs text-opacity-80">
+                    Nativebase
+                  </span>
+                </div>
+              </div>
+
+              <a
+                href="https://play.google.com/store/apps/details?id=com.rbscrm"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  className="opacity-80 hover:opacity-100 w-32 rounded-lg"
+                  alt="Get it on Google Play"
+                  src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                />
+              </a>
+            </div>
+          </div>
+
           <div className="bg-darkAcc rounded-lg flex flex-col justify-around items-center overflow-hidden">
             <img
               className="h-64 w-full object-contain object-top"
